@@ -100,3 +100,18 @@ other
 ```
 Done :-)
 
+## Other Example Uses
+
+### Writing
+
+If you are a writer, either books, plays, films or anything else like that then using
+Fastway either on its own or combined with a package like Iedit can provide a quick way
+to edit your documents.
+
+Lets just say your in the middle of writing your next blockbuster and you want to make
+some changes.... In this example (excerpt from Harry Potter) i decide i want to change 
+the character called Nearly Headless Nick to Nearly Headless Henry in the whole buffer....
+
+![alt text](https://github.com/super-tomcat/Fastway/blob/main/fast_way_writing_example_1?raw=true)
+
+
