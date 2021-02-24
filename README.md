@@ -145,11 +145,12 @@ Add these lines to the end of your Emacs init.el file.
 These will make sure Fastway loads every time Emacs starts so its ready to use
 and will set the default keys to ( C-, ) that toggle Fastway On/Off
 
-
 ```
 (require 'fastway-mode)
 (global-set-key (kbd fastway-toggle-key-default) 'fastway-toggle)
 ```
+
+
 Default Keys:
 ===========================================
 ```
@@ -163,6 +164,26 @@ C-C f k       Display fastway keys
 ```
 
 Note that you can change most of these keys to your own bindings.
+
+
+Quick run:
+=============================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Customization
 =============================================
