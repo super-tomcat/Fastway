@@ -169,20 +169,27 @@ Customization
 The following options can be customized, in Emacs press M-x and enter
 ```customize-group``` then enter ```fastway``` to see the following....
 
-
+```
 Show Value Fastway Char Mode Case Sensitive
+```
    If this is On (t) then in Character mode, keys are case sensitive, which means Hide
    for example you will need to press W (shift-w) to move to W characters, etc. If 
    this is Off (nil)(default) then pressing either w or W (shift-w) will move to
    both w and W.
 
-Show Value Fastway Character Movement Modeline String 
+```
+Show Value Fastway Character Movement Modeline String
+```
    Modeline string appended to ‘fastway-main-modeline-string’ when Fastway is in character movement mode.
 
+```
 Show Value Fastway Cursor Movement Modeline String 
+```
    Modeline string appended to ‘fastway-main-modeline-string’ when Fastway is in cursor movement mode.
 
-Show Value Fastway Default Movement Mode 
+```
+Show Value Fastway Default Movement Mode
+```
    Use this option to set Fastways default movement. Cursor Movement lets you use Hide
    2 keys to move left and right to each match, the advantage with this mode is that
    you can still edit the line while its on, the disadvantage compared to Character
@@ -192,57 +199,81 @@ Show Value Fastway Default Movement Mode
    Movement, the disadvantage is that you cannot edit the line while this mode is on.
    You can also switch between either mode while Fastway is on.
 
-Show Value Fastway Default Regex Index 
+```
+Show Value Fastway Default Regex Index
+```
    This is the index to the regex you want to start each session of Fastway with. Hide
    This must be in range of the total number of regex you have in ‘fastway-line-match-regex’.
    Also see ‘fastway-start-with-last-used-regex’ to overide this each time you switch Fastway on
    during the current session.
 
-Show Value Fastway Display Message 
+```
+Show Value Fastway Display Message
+```
    If this is On (non nil) (default) then whenever you switch Fastway on or off Hide
    a message will also be displayed.
 
-Show Value Fastway Key Move Left 
+```
+Show Value Fastway Key Move Left
+```
    If fastway is in Cursor mode then this is the key used to move to the next position on the left.
    This key will only apply when Fastway is switched on.
 
-Show Value Fastway Key Move Right 
+```
+Show Value Fastway Key Move Right
+```
    If fastway is in Cursor mode then this is the key used to move to the next position on the right.
    This key will only apply when Fastway is switched on.
 
-Show Value Fastway Key Movement Mode Switch 
+```
+Show Value Fastway Key Movement Mode Switch
+```
    Key used to switch between Fastway movement modes, only works when Fastway
    is already on. 
    The modeline will update to show which mode you are in.
 
-Show Value Fastway Key Overlay Switch 
+```
+Show Value Fastway Key Overlay Switch
+```
    Key used to switch between overlays in ‘fastway-matches-overlay-face-1’,
     ‘fastway-matches-overlay-face-2’ and ‘fastway-matches-overlay-face-3’or
    to turn the overlay off. This key will only apply when Fastway is switched on.
 
-Show Value Fastway Key Regex Switch 
+```
+Show Value Fastway Key Regex Switch
+```
    Key used to switch between different regex in ‘fastway-line-match-regex’.
    Each regex determines what positions will be highlighted and jumped to.
    This key will only apply when Fastway is switched on.
 
-Show Value Fastway Key Show Keys 
+```
+Show Value Fastway Key Show Keys
+```
    Display fastway keys in seperate window
 
-Show Value Fastway Line Match Regex 
+```
+Show Value Fastway Line Match Regex
+```
    These are the regular expressions that Fastway uses to find matches.
    Each element should look like ("Name" "Regex"), the Name string will be shown
    as a message when you switch between them while Fastway is on, the Regex string
    will only apply to the current line that point is on, even if a region is active.
 
-Show Value Fastway Main Modeline String 
+```
+Show Value Fastway Main Modeline String
+```
    The main string displayed in the modeline when Fastway is on.
 
+```
 Show Fastway Matches Overlay Face 1 face
+```
    Face number 1 which is used to highlight the Fastway positions you will jump to.
    See ‘fastway-overlay-default-choice’ to set this to the default when you start a new
    session
 
+```
 Show Fastway Matches Overlay Face 2 face
+```
    Face number 2 which is used to highlight the Fastway positions you will jump to.
    See ‘fastway-overlay-default-choice’ to set this to the default when you start a new
    session
@@ -252,25 +283,30 @@ Show Fastway Matches Overlay Face 3 face
    See ‘fastway-overlay-default-choice’ to set this to the default when you start a new
    session
 
-Show Value Fastway Overlay Default Choice 
+```
+Show Value Fastway Overlay Default Choice
+```
    Use this option to set Fastways default overlay. In other words how the matches
    are highlighted when Fastway is first switched on. You can only choose one
    face out of two, or you can elect to have no overlay which means no highlighting.
 
-Show Value Fastway Overlay Priority 
+```
+Show Value Fastway Overlay Priority
+```
    The priority of the overlay used to indicate matches.
 
-Show Value Fastway Start With Last Used Regex 
+```
+Show Value Fastway Start With Last Used Regex
+```
    If this is On (non nil) (default) then whenever you switch Fastway on during the
    current session it will start with the last used regex. If this is Off (nil) then
    whenever you switch Fastway on it will always start with the Regex pointed to
    by ‘fastway-default-regex-index’.
 
-Show Value Fastway Toggle Key Default 
+```
+Show Value Fastway Toggle Key Default
+```
    Key used to toggle Fastway mode on/off.
-
-
-
 
 
 
