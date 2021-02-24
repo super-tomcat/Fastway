@@ -4,7 +4,13 @@ Fast way to move to positions on the current line in Emacs
 ![alt text](https://github.com/super-tomcat/Fastway/blob/main/fastway.png?raw=true)
 
 
-Coming Soon :-)
+Reason for writing this.... in Emacs we have Avy and Ace-jump (and similar packages) for quickly moving to most places on the screen,
+which work very well, however i found them a bit overwhelming, lots of chars popping up everywhere showing where to jump to, plus out
+of habit i usually found myself already on the line i wanted to edit before thinking about Avy which kind of defeated the object.
+
+Having found myself already on the line i'd then do something like lots of right cursors or even Ctrl-right and Ctr-left cursors etc
+to get where i wanted, which, depending on how long the line was could involve quite a few keypresses, hence Fastway was born.
+
 
 Fastway also came about after seeing this thread on Reddit where someone asked if EMACS/VIM are more efficient than other graphical editors?
 
