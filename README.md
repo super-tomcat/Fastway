@@ -164,6 +164,18 @@ C-C f k       Display fastway keys
 
 Note that you can change most of these keys to your own bindings.
 
+Customization
+=============================================
+The following options can be customized, in Emacs press M-x and enter
+```customize-group``` then enter ```fastway```
+
+
+
+
+
+
+
+
 
 
 ## Other Example Uses
