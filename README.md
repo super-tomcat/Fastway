@@ -19,7 +19,7 @@ https://www.reddit.com/r/linux/comments/6vflvy/is_emacsvim_really_that_much_more
 Somebody replied giving an example of how they could quickly edit some sections of code using Vim, it went something like this:
 
 This is the example code they gave:
-```
+```=
 int main()
  {
       if(somvar != someothervar)
