@@ -106,7 +106,53 @@ other
 ```
 Done :-)
 
+See further on for more example uses...
+
+Installing into Emacs....
+============================================================================
+
+You need to put the file (fastway-mode.el) in a folder where Emacs
+can see it.
+If you are not sure how to do this then you can do what i do...
+
+I have created a new folder inside my Emacs (.emacs.d) folder
+called: site-lisp
+
+In this folder i put all my seperate .el files that i want to load and
+use when Emacs starts.
+
+Once you have created this folder, put the file: fastway-mode.el inside it.
+
+To make Emacs see the files in this folder you need to add this line to
+the top of your Emacs init.el file:
+
+```(add-to-list 'load-path (expand-file-name "~/.emacs.d/site-lisp"))```
+
+You can now load any of the files in this folder, usually by adding something
+like:
+
+```(require 'fastway-mode)```
+
+to your Emacs init file and then set any customization you need.
+
+If you know how to you can also byte-compile the fastway-mode.el file, just
+open it in Emacs and go: Emacs-Lisp > Byte Compile This File, from the Emacs
+menu and its done.
+
+Example Configuration....
+============================================================================
+Add these lines to the end of your Emacs init.el file.
+These will make sure Fastway loads every time Emacs starts so its ready to use
+and will set the default keys to ( C-, ) that toggle Fastway On/Off
+
+
+```
+(require 'fastway-mode)
+(global-set-key (kbd fastway-toggle-key-default) 'fastway-toggle)
+```
+
 ## Other Example Uses
+
 
 ### Writing
 
