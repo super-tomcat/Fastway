@@ -150,6 +150,21 @@ and will set the default keys to ( C-, ) that toggle Fastway On/Off
 (require 'fastway-mode)
 (global-set-key (kbd fastway-toggle-key-default) 'fastway-toggle)
 ```
+Default Keys:
+===========================================
+```
+C-,           Toggles Fastway On/Off
+C-.           Cycles through regex used for matches
+M-C-,         Cycles through overlays used to highlight matches
+M-C-'         Switches between Cursor and Character movement modes
+<right>       Move point to next match on the right
+<left>        Move point to next match on the left
+C-C f k       Display fastway keys
+```
+
+Note that you can change most of these keys to your own bindings.
+
+
 
 ## Other Example Uses
 
