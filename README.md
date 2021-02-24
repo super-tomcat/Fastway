@@ -19,14 +19,14 @@ https://www.reddit.com/r/linux/comments/6vflvy/is_emacsvim_really_that_much_more
 Somebody replied giving an example of how they could quickly edit some sections of code using Vim, it went something like this:
 
 This is the example code they gave:
-```=
-int main()
- {
-      if(somvar != someothervar)
-      {
-          /* do a bunch of stuff */
-      }
- }
+```
+1  int main()
+2  {
+3       if(somvar != someothervar)
+4       {
+5           /* do a bunch of stuff */
+6       }
+7  }
 ``` 
 OK... so, I want to change the condition on line 3 to someothervar > 4 and I want to change the entire block inside on line 5...
 
