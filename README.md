@@ -172,7 +172,7 @@ The following options can be customized, in Emacs press M-x and enter
 ```
 Show Value Fastway Char Mode Case Sensitive
 ```
-   If this is On (t) then in Character mode, keys are case sensitive, which means Hide
+   If this is On (t) then in Character mode, keys are case sensitive, which means
    for example you will need to press W (shift-w) to move to W characters, etc. If 
    this is Off (nil)(default) then pressing either w or W (shift-w) will move to
    both w and W.
@@ -190,7 +190,7 @@ Show Value Fastway Cursor Movement Modeline String
 ```
 Show Value Fastway Default Movement Mode
 ```
-   Use this option to set Fastways default movement. Cursor Movement lets you use Hide
+   Use this option to set Fastways default movement. Cursor Movement lets you use
    2 keys to move left and right to each match, the advantage with this mode is that
    you can still edit the line while its on, the disadvantage compared to Character
    Movement is that it may take more key presses to get to where you want. 
@@ -202,7 +202,7 @@ Show Value Fastway Default Movement Mode
 ```
 Show Value Fastway Default Regex Index
 ```
-   This is the index to the regex you want to start each session of Fastway with. Hide
+   This is the index to the regex you want to start each session of Fastway with.
    This must be in range of the total number of regex you have in ‘fastway-line-match-regex’.
    Also see ‘fastway-start-with-last-used-regex’ to overide this each time you switch Fastway on
    during the current session.
@@ -210,7 +210,7 @@ Show Value Fastway Default Regex Index
 ```
 Show Value Fastway Display Message
 ```
-   If this is On (non nil) (default) then whenever you switch Fastway on or off Hide
+   If this is On (non nil) (default) then whenever you switch Fastway on or off
    a message will also be displayed.
 
 ```
