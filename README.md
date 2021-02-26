@@ -167,7 +167,7 @@ Note that you can change most of these keys to your own bindings, see
 Customization further on for how to do that.
 
 
-Quick run:
+Quick overview:
 =============================================
 
 This is a quick overview to get you up and running with Fastway.                                      
@@ -195,9 +195,12 @@ The first time you try it the highlights should change to just being underlined.
 
 Fastway comes with 4 different highlighting modes which also includes a mode that completly           
 switches highlighting off but Fastway will still work, this is for more experienced users who         
-do not want to be distracted by any highlighting.                                                     
-You can also customize any of these highlighting modes.                                                    
-Practice switching between the different highlighting modes now with ```M-C-,```                            
+do not want to be distracted by any highlighting.
+
+You can also customize any of these highlighting modes.
+
+Practice switching between the different highlighting modes now with ```M-C-,```
+
 Once you have settled on a highlighting you prefer you can customize Fastway so that every time       
 Fastway starts it will use that highlighting, read further on for notes about Customization.
 
@@ -208,7 +211,8 @@ Fastway has 2 modes of movement along a line, either cursor mode or character mo
 When you first try Fastway you will be in cursor mode, you can see what mode you are                  
 in at any time by looking at the emacs mode line, if you are in cursor mode then you                  
 will see: ```Fastway[curs]``` in the mode line, and if you are in character mode you will                   
-see: ```Fastway[char]``` in the mode line.                                                                  
+see: ```Fastway[char]``` in the mode line.
+
 You can switch between each mode when ever you want by pressing ```M-C-'``` (for windows users              
 that key combination is: ```Alt-Ctrl and '```)
 
@@ -225,7 +229,8 @@ be aware of....
 When you are in character mode you will not be able to edit any characters that are                   
 the same as those highlighted, this is because Fastway has to intercept the keys                      
 when you press them, however if you are in cursor mode then you can edit those                        
-characters.                                                                                           
+characters.
+
 So you have to weigh up whether you can get by with cursor mode and also gain virtually               
 full editing of the line at the same time.                                                            
 Or do you want the slightly quicker (in most cases) way of moving point to where you want             
