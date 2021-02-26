@@ -143,7 +143,7 @@ Example Configuration....
 ============================================================================
 Add these lines to the end of your Emacs init.el file.
 These will make sure Fastway loads every time Emacs starts so its ready to use
-and will set the default keys to ( C-, ) that toggle Fastway On/Off
+and will set the default keys that toggle Fastway On/Off to ```C-,```
 
 ```
 (require 'fastway-mode)
@@ -163,26 +163,78 @@ M-C-'         Switches between Cursor and Character movement modes
 C-C f k       Display fastway keys
 ```
 
-Note that you can change most of these keys to your own bindings.
+Note that you can change most of these keys to your own bindings, see
+Customization further on for how to do that.
 
 
 Quick run:
 =============================================
 
+This is a quick overview to get you up and running with Fastway.                                      
 
+Make sure you have a file loaded in Emacs preferably one that contains a fair amount                  
+of text.
 
+Switch Fastway on by pressing ```C-,``` (see further back for installation if this does not work)
 
+Note the Fastway message appear in the mini buffer and the ```Fastway[curs]``` entry in the mode line.      
+If there is any text on the current line you should see that the first letter of each                 
+word is highlighted.
 
+Practice pressing the left and right cursor keys to move point to each highlight.
+Point will always move to the nearest highlight depending on which direction (left or right) you want to move in.                                                                                  
+You can also press the up and down cursor keys to move to other lines and as you                      
+do this note how the highlighting updates for each line.
 
+As you edit the line Fastway will automatically update the highlighting on the line.                  
+Try changing a word to a different word and watch the highlighting update.                            
+You can also switch between different highlighting modes by pressing ```M-C-,``` (for Windows users         
+that key combination is ```Alt-Ctrl and ,```)
 
+The first time you try it the highlights should change to just being underlined.
 
+Fastway comes with 4 different highlighting modes which also includes a mode that completly           
+switches highlighting off but Fastway will still work, this is for more experienced users who         
+do not want to be distracted by any highlighting.                                                     
+You can also customize any of these highlighting modes.                                                    
+Practice switching between the different highlighting modes now with ```M-C-,```                            
+Once you have settled on a highlighting you prefer you can customize Fastway so that every time       
+Fastway starts it will use that highlighting, read further on for notes about Customization.
 
+To turn Fastway off just press ```C-,``` again.                                                             
+                                                                                                      
+Fastway has 2 modes of movement along a line, either cursor mode or character mode.                   
 
+When you first try Fastway you will be in cursor mode, you can see what mode you are                  
+in at any time by looking at the emacs mode line, if you are in cursor mode then you                  
+will see: ```Fastway[curs]``` in the mode line, and if you are in character mode you will                   
+see: ```Fastway[char]``` in the mode line.                                                                  
+You can switch between each mode when ever you want by pressing ```M-C-'``` (for windows users              
+that key combination is: ```Alt-Ctrl and '```)
 
+So what is the difference between cursor and character mode?
 
+When Fastway is in cursor mode you can use the left and right cursor                                  
+keys (these keys can be customized) to move point to each highlight on the line.                      
+However when Fastway is in character mode you can also press the corresponding key                    
+of the highlighted character to move point to that position.
 
-
-
+So it may seem that character mode is the best mode to be in since it allows more                     
+ways to move point to where you need it, however there are some things you need to                    
+be aware of....                                                                                          
+When you are in character mode you will not be able to edit any characters that are                   
+the same as those highlighted, this is because Fastway has to intercept the keys                      
+when you press them, however if you are in cursor mode then you can edit those                        
+characters.                                                                                           
+So you have to weigh up whether you can get by with cursor mode and also gain virtually               
+full editing of the line at the same time.                                                            
+Or do you want the slightly quicker (in most cases) way of moving point to where you want             
+it by using Fastway in character mode but lose the ability to do some editing.                        
+You can of course just switch Fastway off to re-gain full editing again.                              
+                                                                                                      
+While your learning to use Fastway its easy to forget the keys, to help with that you                 
+can at any time while Fastway is on bring up a new window displaying Fastways keys, to                
+do that just press ```C-c then f then k```                                                                     
 
 
 Customization
