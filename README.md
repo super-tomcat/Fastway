@@ -235,11 +235,43 @@ So you have to weigh up whether you can get by with cursor mode and also gain vi
 full editing of the line at the same time.                                                            
 Or do you want the slightly quicker (in most cases) way of moving point to where you want             
 it by using Fastway in character mode but lose the ability to do some editing.                        
-You can of course just switch Fastway off to re-gain full editing again.                              
-                                                                                                      
-While your learning to use Fastway its easy to forget the keys, to help with that you                 
-can at any time while Fastway is on bring up a new window displaying Fastways keys, to                
-do that just press ```C-c then f then k```                                                                     
+You can of course just switch Fastway off to re-gain full editing again.
+
+How does Fastway know which characters to highlight and move to?                           
+                                                                                           
+Fastway uses Regular Expressions to determine which characters to highlight and move to.
+
+However you only need to know Regular Expressions if you want to change how Fastway        
+does it, Fastway comes with 3 built in Regular Expressions (more may be added in time,     
+such as adding the capability to move to the ends of words as well) that you can switch    
+to at any time.
+
+When you first use Fastway the default regular expression will highlight the start of      
+words (ascii characters only) and numbers.                                                 
+This regular expression works well for a wide range of text editing situations.
+
+However if you are a programmer for example then you may also require a regular expression 
+that lets you jump to other characters besides the start of words and numbers, examples include mathematical symbols such as +, *, -, etc                                          
+Well Fastway has that option built in.
+
+In fact to cycle through the 3 different regular expressions for matching make sure        
+Fastway is running then press the keys: ```C-.```                                                
+Each time you press ```C-.``` you will see a message in the Emacs mini buffer that tells you     
+what type of characters Fastway will now move to and also you should see the highlights    
+on the current line update depending on what characters are on the current line.
+
+The following 3 types of regular expressions are included with Fastway:                    
+                                                                                           
+Words and Numbers                                                                          
+Delimeters and Numbers                                                                     
+Words joined with - and Numbers (included mainly for Lisp programmers out there)           
+                                                                                           
+As previously stated, if you are familiar with Regular Expressions then you can change     
+any of these to your liking, see the Customization section for more details.               
+                                                                                           
+And finally, while you are learning to use Fastway its easy to forget the keys, to help    
+with that you can at any time while Fastway is turned on bring up a new window displaying  
+Fastways keys, to do that just press ```C-c then f then k```                                                                     
 
 
 Customization
